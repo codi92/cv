@@ -334,6 +334,88 @@
             }
         }
 
+        /* Dark theme for HTML view only (not print) */
+        @media (prefers-color-scheme: dark) {
+
+            html,
+            body {
+                background: #181c1f !important;
+                color: #e0e6ed !important;
+            }
+
+            .container {
+                background: #23272b !important;
+                color: #e0e6ed !important;
+                box-shadow: 0 4px 24px #0008 !important;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #4fc3f7 !important;
+            }
+
+            .label,
+            a {
+                color: #4fc3f7 !important;
+            }
+
+            .job-title {
+                color: #ffb74d !important;
+            }
+
+            .job-place {
+                color: #80cbc4 !important;
+            }
+
+            .job-date {
+                color: #b0bec5 !important;
+            }
+
+            .section,
+            .two-col {
+                background: none !important;
+                border: none !important;
+                box-shadow: none !important;
+            }
+
+            .keywords-en,
+            .keywords {
+                background: #263238 !important;
+                color: #4fc3f7 !important;
+            }
+
+            .toc {
+                background: #23272b !important;
+                border-left: 4px solid #4fc3f7 !important;
+            }
+
+            .toc>strong {
+                color: #4fc3f7 !important;
+            }
+
+            .footer {
+                color: #b0bec5 !important;
+                border-top: 1px solid #37474f !important;
+            }
+
+            .url {
+                color: #4fc3f7 !important;
+            }
+
+            .lang-switcher button {
+                background: #23272b !important;
+                border: 1px solid #4fc3f7 !important;
+                color: #4fc3f7 !important;
+            }
+
+            .lang-switcher button.active,
+            .lang-switcher button:focus {
+                background: #4fc3f7 !important;
+                color: #23272b !important;
+            }
+        }
+
         @media print {
             body {
                 background: #fff !important;
@@ -684,7 +766,6 @@
 
     <!-- RO -->
     <div class="container lang-ro hide">
-
         <h1 id="cv---pavel-slajnev---română">CV - Pavel Slajnev <span
                 style="font-size:0.7em;color:#888;">(Română)</span></h1>
 
@@ -954,9 +1035,9 @@
             </ul>
         </div>
     </div>
+
     <!-- RU -->
     <div class="container lang-ru hide">
-
         <h1 id="cv---pavel-slajnev---русский">CV - Павел Слажнев <span
                 style="font-size:0.7em;color:#888;">(Русский)</span></h1>
         <div class="main-skills-row">
@@ -1169,7 +1250,6 @@
                 <li>Аналитическое мышление и ориентация на решение задач</li>
                 <li>Ориентация на идеальный результат</li>
                 <li>Тщательная оценка деталей и всех технических и функциональных аспектов систем</li>
-                <li>Внедрение инновационных и уникальных решений для технических задач</li>
                 <li>Знание и применение лучших практик в IT</li>
             </ul>
         </div>
@@ -1194,6 +1274,7 @@
                     <li><a href="#areas-of-interest">Areas of Interest</a></li>
                     <li><a href="#applications-and-tools-used">Applications and Tools Used</a></li>
                     <li><a href="#personal-characteristics">Personal Characteristics</a></li>
+                    <li><a href="#footer">Links</a></li>
                 </ul>
             </li>
             <li class="lang-ro"><a href="#cv---pavel-slajnev">CV - Slajnev Pavel</a>
@@ -1206,6 +1287,8 @@
                     <li><a href="#aplicații-și-instrumente-utilizate">Aplicații și instrumente utilizate</a>
                     </li>
                     <li><a href="#caracteristici-personale">Caracteristici personale</a></li>
+                    <li><a href="#footer">Link-uri</a></li>
+
                 </ul>
             </li>
         </ul>
@@ -1220,10 +1303,12 @@
                 </li>
                 <li><a href="#ключевые-слова-для-поиска">Ключевые слова для поиска</a></li>
                 <li><a href="#личные-качества">Личные качества</a></li>
+                <li><a href="#footer">Ссылки</a></li>
+
             </ul>
         </li>
     </div>
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="social-links">
             <p class="url">Contact me:</p>
             <a href="tel:+37361181120" title="Phone" target="_blank" rel="noopener">
@@ -1263,6 +1348,9 @@
             <button data-lang="en" class="active">EN</button>
             <button data-lang="ro">RO</button>
             <button data-lang="ru">RU</button>
+            <button id="print-btn" onclick="window.print();" class="icon print-btn" title="Print or Save PDF" style="margin-left:auto;">
+                <i class="fas fa-print" style="margin-right:8px;"></i>
+            </button>
         </div>`;
         document.querySelectorAll('.container').forEach(container => {
             container.insertAdjacentHTML('afterbegin', langSwitcherHtml);
@@ -1284,13 +1372,36 @@
                 tocLangRu.style.display = (lang === 'ru') ? 'block' : 'none';
             }
             // Initial state
-            updateToc('en');
+            let activeLang = localStorage.getItem('cv_active_lang');
+            if (activeLang !== 'en' && activeLang !== 'ro' && activeLang !== 'ru') {
+                activeLang = 'en';
+                localStorage.setItem('cv_active_lang', 'en');
+            }
+            updateToc(activeLang);
+            Object.keys(containers).forEach(l => {
+                if (l === activeLang) {
+                    containers[l].classList.remove('hide');
+                } else {
+                    containers[l].classList.add('hide');
+                }
+            });
+            document.querySelectorAll('.lang-switcher').forEach(ls => {
+                ls.querySelectorAll('button').forEach(b => {
+                    if (b.getAttribute('data-lang') === activeLang) {
+                        b.classList.add('active');
+                    } else {
+                        b.classList.remove('active');
+                    }
+                });
+            });
             buttons.forEach(btn => {
                 btn.addEventListener('click', function () {
                     if (btn.disabled) return;
                     buttons.forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
                     const lang = btn.getAttribute('data-lang');
+                    activeLang = lang;
+                    localStorage.setItem('cv_active_lang', lang);
                     Object.keys(containers).forEach(l => {
                         if (l === lang) {
                             containers[l].classList.remove('hide');
@@ -1311,6 +1422,16 @@
                 });
             });
         });
+        // each 1 secs run the code
+        setInterval(() => {
+            let activeLang = localStorage.getItem('cv_active_lang');
+            if (activeLang !== 'en' && activeLang !== 'ro' && activeLang !== 'ru') {
+                activeLang = 'en';
+                localStorage.setItem('cv_active_lang', 'en');
+                document.location.reload();
+            }
+        }, 1000);
+        // Add print button functionality
     </script>
 </body>
 
