@@ -2,6 +2,10 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Pavel Slajnev",
+  "slogan": "Preserve what works. Backup before change. Reverse-engineer before redesign. Understand every component, because even the smallest detail can have a critical purpose.",
+  "sloganEditable": false,
+  "sloganNote": "This slogan is fixed. Automated tools/agents must not edit, paraphrase, translate, or remove it.",
+  "description": "IT and automation specialist with 12+ years of experience across DevOps, network infrastructure, and industrial automation, including 9 years leading automation, IT, and electrical systems at Moldova's largest hospital (IMSP SCR Timofei Moșneaga). Delivered 20+ CCTV and network infrastructure projects end-to-end, from design and procurement to commissioning, and built internal automation tools in Python. Currently expanding into backend/API development and AI-agent tooling (FastAPI, MCP) as a System Administrator at Strategic Software.",
   "address": {
     "addressLocality": "Chișinău",
     "addressCountry": "Moldova"
@@ -55,16 +59,18 @@
     "Python programming for web, desktop applications (Tkinter), automation, and API integration (FastAPI, REST API, JSON)",
     "Process automation application development (Python, Django, Flask, FastAPI)",
     "Practical use of large language models (LLMs) for development and automation workflows (Claude, Gemini, GPT, Ollama, DeepSeek)",
+    "Model Context Protocol (MCP) server integration and multi-agent orchestration for LLM tool aggregation",
     "Operating system administration (Windows, Linux, Unix/BSD, MikroTik RouterOS)",
-    "Relational database management (MySQL, MSSQL, PostgreSQL)",
+    "Relational database management (MySQL, MSSQL, PostgreSQL, Oracle XE)",
     "Web server administration (Apache, Nginx), VPN configuration, SSL/SSH security, monitoring (Nagios, Zabbix)",
     "IT services implementation and administration (Active Directory, DNS, DHCP, VPN, VoIP)",
-    "Virtualization platform administration (VMware, Proxmox, VirtualBox)",
-    "Implementation of virtualization and containerization solutions (Proxmox, VMware, Docker)",
+    "Virtualization platform administration (VMware, Proxmox, VirtualBox, Hyper-V, Citrix)",
+    "Implementation and administration of business software platforms (1C)",
+    "Implementation of virtualization and containerization solutions (Proxmox, VMware, Docker, Proxmox CT, LXC)",
     "Server and database migration between Windows and Linux platforms",
     "Network administration (TCP/IP, DNS, DHCP, VLAN, VPN, VoIP, Zero Trust, MikroTik, Cisco, Ubiquiti, OpenWRT)",
     "Computer and virtual network management (VLAN, VPN, Zero Trust, MikroTik RouterOS, Cisco, Ubiquiti, OpenWRT)",
-    "IP telephony service management (Asterisk, FreePBX, 3CX, Grandstream, Cisco-CUCM)",
+    "IP telephony service management and VoIP project delivery, from server deployment to SIP endpoint and trunk configuration (Asterisk, FreePBX, 3CX, Grandstream, Cisco-CUCM, Planet)",
     "Installation and configuration of access control and video surveillance systems (Hikvision, Dahua, ZKAccess, Milestone)",
     "IT inventory management with remote monitoring systems (GLPI, GLPI-Agent, FusionInventory)",
     "Technical support for hardware, software, networking, servers, and cloud/containerization solutions",
@@ -73,7 +79,8 @@
     "Coordination and management of technical projects",
     "Effective collaboration in multidisciplinary teams",
     "Installation and maintenance of low-voltage electrical systems",
-    "Use of modern virtual assistant and task automation technologies (RPA, Artificial Intelligence, Machine Learning)"
+    "Use of modern virtual assistant and task automation technologies (RPA, Artificial Intelligence, Machine Learning)",
+    "3D design and printing, from MakerWorld sourcing to custom client designs (SketchUp; Bambu Lab P1S; PLA, ABS, PETG, TPU) for tools, organizers, spacers/dividers, and gap fillers"
   ],
   "hasOccupation": [
     {
@@ -92,7 +99,8 @@
         "Integration of client-side solutions and third-party systems into existing infrastructure and workflows.",
         "Python programming: development and maintenance of internal tools, automation scripts, and backend services.",
         "Development and integration of REST APIs (FastAPI, JSON) for internal and client-facing systems.",
-        "Use of LLM-based tools (Claude, Gemini, GPT, Ollama, DeepSeek) to support development and automation tasks."
+        "Use of LLM-based tools (Claude, Gemini, GPT, Ollama, DeepSeek) to support development and automation tasks.",
+        "Delivered a large-scale international VoIP project (3CX) for a major company in Romania, under NDA — full lifecycle from server deployment to end-user configuration (SIP phones) and SIP trunks."
       ]
     },
     {
@@ -111,7 +119,11 @@
         "Administration and maintenance of automated systems and industrial equipment.",
         "Participation in IT and electrical infrastructure modernization.",
         "Technical team management and collaboration with IT service providers.",
-        "Management and optimization of the institution's automated systems, including implementation of modern access control, video surveillance, and parking automation solutions.",
+        "Delivered 20+ CCTV infrastructure projects end-to-end, from requirements gathering and quotation through design, implementation, testing, commissioning, and documentation.",
+        "Installed, configured, and maintained 100+ IP cameras and 20+ NVR/DVR recording systems (4-64 channels) across commercial and industrial sites.",
+        "Designed and implemented Layer 2/Layer 3 network topologies for surveillance and building-automation infrastructure, including 30+ managed PoE switches, routers, and wireless links, and 50+ VLANs with routing, VPN, and remote access.",
+        "Planned and installed 10+ km of structured cabling (UTP/Fiber) for CCTV and network infrastructure.",
+        "Maintained 99%+ system availability through preventive maintenance and rapid fault resolution, providing technical support for 100+ surveillance and networking devices.",
         "Development of internal applications for efficient IT resource and operational process management, including integration with IT inventory monitoring and management systems.",
         "Development of a time management program for employees, including integration with access control and video surveillance systems for attendance and activity monitoring.",
         "Design of data transport systems and computer networks, including implementation of network security and monitoring solutions.",
@@ -139,7 +151,8 @@
         "Implementation of access control, video surveillance, and IP telephony systems.",
         "Technical support for computers, servers, cloud/containerization solutions.",
         "Effective collaboration with development teams for IT system integration.",
-        "Automation of administrative and operational tasks using scripts (PowerShell, VBA, Bash, CMD, etc.) for OS installation, service management, and rapid resolution of recurring incidents."
+        "Automation of administrative and operational tasks using scripts (PowerShell, VBA, Bash, CMD, etc.) for OS installation, service management, and rapid resolution of recurring incidents.",
+        "Delivered 2 IP telephony (VoIP) projects based on Grandstream, including full deployment of SIP stations and design of call-routing plans, from installation through configuration."
       ]
     },
     {
@@ -182,7 +195,11 @@
       "startDate": "2013-10",
       "endDate": "2016-01",
       "responsibilities": [
-        "Administration of computers, servers, video surveillance, VOIP, networking."
+        "Administration of computers, servers, video surveillance, VOIP, networking.",
+        "Built a VoIP telephony system from scratch through to full production use, including automated system-health monitoring with email status alerts.",
+        "Full system administrator role covering end-to-end IT operations: OS administration across the FreeBSD-to-Ubuntu range, servers, and networking infrastructure.",
+        "Delivered client-side projects end-to-end across VoIP, Wi-Fi, networking, and electrical systems, from planning through implementation.",
+        "Implemented and administered Hyper-V and Citrix virtualization platforms, and 1C business software."
       ]
     }
   ],
@@ -209,14 +226,15 @@
     "IT, Tech",
     "Microservices, Cloud, DevOps",
     "Automation, API Integration",
-    "IT Security, Networking"
+    "IT Security, Networking",
+    "3D Design & Printing"
   ],
   "usedApplication": [
     "Operating Systems: Windows, Linux (Ubuntu, Debian, CentOS), Unix/BSD",
-    "Databases: MySQL, MSSQL, PostgreSQL",
+    "Databases: MySQL, MSSQL, PostgreSQL, Oracle XE",
     "Web Servers: Apache, Nginx",
     "Virtualization: VMware, Proxmox, VirtualBox",
-    "Containerization: Docker, Kubernetes",
+    "Containerization: Docker, Kubernetes, LXC, Proxmox CT",
     "Office: Microsoft Office, LibreOffice",
     "Collaboration: Git, GitLab, GitHub, Jira, Confluence",
     "Monitoring: Nagios, Zabbix",
@@ -224,6 +242,7 @@
     "Security: SSL, SSH, VPN",
     "Workflow Automation: PowerShell, Bash, Python",
     "Video Conferencing: Zoom, Microsoft Teams, Google Meet",
+    "3D Design & Printing: SketchUp, Bambu Lab P1S (PLA, ABS, PETG, TPU), MakerWorld",
     "Technical Support: GLPI, FusionInventory, GLPI-Agent, AnyDesk, TeamViewer, RustDesk, Guacamole, VNC, MS Remote Desktop, SSH-Terminal",
     "Access Control and Video Surveillance Systems: Hikvision, Dahua, ZKAccess, Milestone, Trassir, Sigur, ZkTeco",
     "IP Telephony: Asterisk, FreePBX, 3CX, Grandstream, Cisco-CUCM"
