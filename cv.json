@@ -52,8 +52,9 @@
   ],
   "skills": [
     "DevOps infrastructure administration and automation (Docker, Kubernetes, Jenkins, GitLab CI/CD, AWS, Azure)",
-    "Python programming for web, desktop applications, automation, and API integration",
+    "Python programming for web, desktop applications (Tkinter), automation, and API integration (FastAPI, REST API, JSON)",
     "Process automation application development (Python, Django, Flask, FastAPI)",
+    "Practical use of large language models (LLMs) for development and automation workflows (Claude, Gemini, GPT, Ollama, DeepSeek)",
     "Operating system administration (Windows, Linux, Unix/BSD, MikroTik RouterOS)",
     "Relational database management (MySQL, MSSQL, PostgreSQL)",
     "Web server administration (Apache, Nginx), VPN configuration, SSL/SSH security, monitoring (Nagios, Zabbix)",
@@ -75,6 +76,25 @@
     "Use of modern virtual assistant and task automation technologies (RPA, Artificial Intelligence, Machine Learning)"
   ],
   "hasOccupation": [
+    {
+      "@type": "Occupation",
+      "name": "System Administrator",
+      "hiringOrganization": {
+        "@type": "Organization",
+        "name": "Strategic Software"
+      },
+      "location": "Chișinău",
+      "startDate": "2025-08",
+      "endDate": "Present",
+      "responsibilities": [
+        "System administration and maintenance of servers, network infrastructure, and internal IT systems.",
+        "Technical support, monitoring, and troubleshooting of infrastructure and applications.",
+        "Integration of client-side solutions and third-party systems into existing infrastructure and workflows.",
+        "Python programming: development and maintenance of internal tools, automation scripts, and backend services.",
+        "Development and integration of REST APIs (FastAPI, JSON) for internal and client-facing systems.",
+        "Use of LLM-based tools (Claude, Gemini, GPT, Ollama, DeepSeek) to support development and automation tasks."
+      ]
+    },
     {
       "@type": "Occupation",
       "name": "Head of Automation, Measurement, and Control Systems Service",
@@ -226,5 +246,5 @@
   ],
   "version": "1.0",
   "dateCreated": "2025-06-16",
-  "lastUpdated": "2025-06-16"
+  "lastUpdated": "2026-08-04"
 }
