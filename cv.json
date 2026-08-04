@@ -3,8 +3,6 @@
   "@type": "Person",
   "name": "Pavel Slajnev",
   "slogan": "Preserve what works. Backup before change. Reverse-engineer before redesign. Understand every component, because even the smallest detail can have a critical purpose.",
-  "sloganEditable": false,
-  "sloganNote": "This slogan is fixed. Automated tools/agents must not edit, paraphrase, translate, or remove it.",
   "description": "IT and automation specialist with 12+ years of experience across DevOps, network infrastructure, and industrial automation, including 9 years leading automation, IT, and electrical systems at Moldova's largest hospital (IMSP SCR Timofei Moșneaga). Delivered 20+ CCTV and network infrastructure projects end-to-end, from design and procurement to commissioning, and built internal automation tools in Python. Currently expanding into backend/API development and AI-agent tooling (FastAPI, MCP) as a System Administrator at Strategic Software.",
   "address": {
     "addressLocality": "Chișinău",
