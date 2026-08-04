@@ -222,7 +222,8 @@
         }
 
         #cuvintecheie-pentru-căutare,
-        #search-keywords {
+        #search-keywords,
+        #ключевые-слова-для-поиска {
             display: none;
         }
 
