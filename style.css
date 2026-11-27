@@ -296,6 +296,10 @@
             display: none;
         }
 
+        .project {
+            margin-top: 24px;
+        }
+
         /* Project timeline (scada-shop.ro) */
         .timeline {
             list-style: none;

@@ -234,6 +234,18 @@
         "CSS3",
         "JavaScript"
       ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kanban Team – multi-user task board (pet project)",
+      "role": "Solo developer (idea, architecture, code, tests, deployment)",
+      "startDate": "2026-10",
+      "endDate": "Present",
+      "description": "A self-hosted Kanban board for teams, grown from my personal to-do app. One code base runs both the single-user and the team version.",
+      "technologies": "JavaScript (vanilla, modular), HTML5, CSS3, nginx + njs (backend API), nchan (real-time updates), WebDAV/JSON storage, Node.js (Windows portable version), PWA / Service Worker, REST API (OpenAPI 3), MCP (Model Context Protocol), Telegram Bot API, Playwright, GitHub Actions CI/CD, Bash, systemd.",
+      "capabilities": "Teams with own columns, task transfer and delegation, notifications, history and audit log, attachments, checklists, labels, timer and statistics; sign-in with passwords and passkeys; live sync between all interfaces (web app, AI assistants via MCP, Telegram bots, Super Productivity plugin); installable app with offline mode; EN/RO/RU interface, light/dark theme.",
+      "quality": "Automated tests (unit, API permission matrix, GUI, browser, reverse proxy, production smoke test) on every push, daily backups, user/admin/API guides with screenshots in three languages.",
+      "opportunities": "Ready to deploy on a client server, behind any reverse proxy or as a Windows portable app; planned storage in Git / S3 with encryption at rest; can be offered as a self-hosted task manager for small companies."
     }
   ],
   "alumniOf": [
