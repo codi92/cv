@@ -296,6 +296,49 @@
             display: none;
         }
 
+        /* Project timeline (new.scada-shop.ro) */
+        .timeline {
+            list-style: none;
+            padding-left: 0;
+            margin: 12px 0 12px 6px;
+            border-left: 3px solid #007acc;
+        }
+
+        .timeline li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: -8px;
+            top: 5px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid #007acc;
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .timeline li:last-child::before {
+            background: #007acc;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .timeline li::before {
+                background: #23272b;
+            }
+
+            .timeline li:last-child::before {
+                background: #007acc;
+            }
+        }
+
         @media (max-width: 800px) {
             .container {
                 padding: 18px 8px;
