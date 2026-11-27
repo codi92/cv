@@ -209,17 +209,18 @@
       "role": "Solo developer (design, code, optimization, deployment)",
       "startDate": "2025-04",
       "endDate": "Present",
-      "description": "End-to-end implementation of the new online shop as the single programmer, using AI-assisted development tools (Claude, GPT, Gemini, GitHub Copilot).",
+      "description": "End-to-end implementation of the new online shop, built on the MerchantPro e-commerce platform, as the single programmer, using AI-assisted development tools (Claude, GPT, Gemini, GitHub Copilot).",
       "timeline": [
         "Analysis & preparation: Audit of the existing site, full backups, reverse-engineering of the current code and data before any change.",
         "New design: New modern, responsive UI/UX design for desktop and mobile.",
-        "Development: Implementation and refactoring of working, maintainable code for the shop features.",
+        "Development: Implementation and refactoring of working, maintainable code for the shop features (MerchantPro theme: Twig templates, SCSS, JavaScript).",
         "Full optimization: Performance, page speed, SEO, security and accessibility optimization of the whole site.",
         "Pipeline: Git-based development pipeline: version control, testing and automated deployment to production.",
         "Production launch: Built and tested on the staging site new.scada-shop.ro, then launched to production at scada-shop.ro.",
         "Ongoing: Continuous improvements, monitoring and maintenance."
       ],
       "tools": [
+        "MerchantPro",
         "Claude",
         "GPT",
         "Gemini",
