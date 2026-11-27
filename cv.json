@@ -204,8 +204,8 @@
   "workExample": [
     {
       "@type": "CreativeWork",
-      "name": "new.scada-shop.ro – E-commerce Website Implementation",
-      "url": "https://new.scada-shop.ro",
+      "name": "scada-shop.ro – E-commerce Website Implementation",
+      "url": "https://scada-shop.ro",
       "role": "Solo developer (design, code, optimization, deployment)",
       "startDate": "2025-04",
       "endDate": "Present",
@@ -216,6 +216,7 @@
         "Development: Implementation and refactoring of working, maintainable code for the shop features.",
         "Full optimization: Performance, page speed, SEO, security and accessibility optimization of the whole site.",
         "Pipeline: Git-based development pipeline: version control, testing and automated deployment to production.",
+        "Production launch: Built and tested on the staging site new.scada-shop.ro, then launched to production at scada-shop.ro.",
         "Ongoing: Continuous improvements, monitoring and maintenance."
       ],
       "tools": [
