@@ -242,8 +242,9 @@
       "startDate": "2026-10",
       "endDate": "Present",
       "description": "A self-hosted Kanban board for teams, grown from my personal to-do app. One code base runs both the single-user and the team version.",
-      "technologies": "JavaScript (vanilla, modular), HTML5, CSS3, nginx + njs (backend API), nchan (real-time updates), WebDAV/JSON storage, Node.js (Windows portable version), PWA / Service Worker, REST API (OpenAPI 3), MCP (Model Context Protocol), Telegram Bot API, Playwright, GitHub Actions CI/CD, Bash, systemd.",
+      "technologies": "JavaScript (vanilla, modular), HTML5, CSS3, nginx + njs (backend API), nchan (real-time updates), WebDAV/JSON storage, Node.js (Windows portable version), PWA / Service Worker, REST API (OpenAPI 3), MCP (Model Context Protocol), Telegram Bot API, pdf.js, MSign (SOAP 1.1), Playwright, GitHub Actions CI/CD, Bash, systemd.",
       "capabilities": "Teams with own columns, task transfer and delegation, notifications, history and audit log, attachments, checklists, labels, timer and statistics; sign-in with passwords and passkeys; live sync between all interfaces (web app, AI assistants via MCP, Telegram bots, Super Productivity plugin); installable app with offline mode; EN/RO/RU interface, light/dark theme.",
+      "pdf endpoint": "PDF attachments with in-app preview (pdf.js) and electronic signing: through MSign (Moldova's government e-signature service, SOAP 1.1 API with the return callback), the MSign portal, or the user's own .p12/.pfx certificate in the browser; every signed copy is checked for a valid signature and saved as a new attachment next to the original.",
       "quality": "Automated tests (unit, API permission matrix, GUI, browser, reverse proxy, production smoke test) on every push, daily backups, user/admin/API guides with screenshots in three languages.",
       "opportunities": "Ready to deploy on a client server, behind any reverse proxy or as a Windows portable app; planned storage in Git / S3 with encryption at rest; can be offered as a self-hosted task manager for small companies."
     }
