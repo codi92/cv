@@ -1,0 +1,618 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Pavel Slajnev",
+    "label": "System Administrator · DevOps & Automation",
+    "image": "https://codi92.github.io/cv/profile.png",
+    "email": "pavel.slajnev@gmail.com",
+    "phone": "+373 611 81 120",
+    "url": "https://codi92.github.io/cv/",
+    "summary": "IT and automation specialist with 12+ years of experience across DevOps, network infrastructure, and industrial automation, including 9 years leading automation, IT, and electrical systems at Moldova's largest hospital (IMSP SCR Timofei Moșneaga). Delivered 20+ CCTV and network infrastructure projects end-to-end, from design and procurement to commissioning, and built internal automation tools in Python. Currently expanding into backend/API development and AI-agent tooling (FastAPI, MCP) as a System Administrator at Strategic Software.",
+    "location": {
+      "city": "Chișinău",
+      "countryCode": "MD",
+      "region": "Moldova"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "pavel-slajnev",
+        "url": "https://www.linkedin.com/in/pavel-slajnev/"
+      },
+      {
+        "network": "GitHub",
+        "username": "codi92",
+        "url": "https://github.com/codi92"
+      },
+      {
+        "network": "Facebook",
+        "username": "codi92",
+        "url": "https://www.facebook.com/codi92"
+      },
+      {
+        "network": "Telegram",
+        "username": "Pavel_Slajnev",
+        "url": "https://t.me/Pavel_Slajnev"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Strategic Software",
+      "position": "System Administrator",
+      "location": "Chișinău",
+      "startDate": "2025-08",
+      "highlights": [
+        "System administration and maintenance of servers, network infrastructure, and internal IT systems.",
+        "Technical support, monitoring, and troubleshooting of infrastructure and applications.",
+        "Integration of client-side solutions and third-party systems into existing infrastructure and workflows.",
+        "Python programming: development and maintenance of internal tools, automation scripts, and backend services.",
+        "Development and integration of REST APIs (FastAPI, JSON) for internal and client-facing systems.",
+        "Use of LLM-based tools (Claude, Gemini, GPT, Ollama, DeepSeek) to support development and automation tasks.",
+        "Delivered a large-scale international VoIP project (3CX) for a major company in Romania, under NDA — full lifecycle from server deployment to end-user configuration (SIP phones) and SIP trunks."
+      ]
+    },
+    {
+      "name": "IMSP SCR Timofei Moșneaga",
+      "position": "Head of Automation, Measurement, and Control Systems Service",
+      "location": "Chișinău",
+      "startDate": "2020-05",
+      "endDate": "2025-05",
+      "highlights": [
+        "Coordination of modernization and automation projects.",
+        "Development of internal applications for process optimization.",
+        "Administration and maintenance of automated systems and industrial equipment.",
+        "Participation in IT and electrical infrastructure modernization.",
+        "Technical team management and collaboration with IT service providers.",
+        "Delivered 20+ CCTV infrastructure projects end-to-end, from requirements gathering and quotation through design, implementation, testing, commissioning, and documentation.",
+        "Installed, configured, and maintained 100+ IP cameras and 20+ NVR/DVR recording systems (4-64 channels) across commercial and industrial sites.",
+        "Designed and implemented Layer 2/Layer 3 network topologies for surveillance and building-automation infrastructure, including 30+ managed PoE switches, routers, and wireless links, and 50+ VLANs with routing, VPN, and remote access.",
+        "Planned and installed 10+ km of structured cabling (UTP/Fiber) for CCTV and network infrastructure.",
+        "Maintained 99%+ system availability through preventive maintenance and rapid fault resolution, providing technical support for 100+ surveillance and networking devices.",
+        "Development of internal applications for efficient IT resource and operational process management, including integration with IT inventory monitoring and management systems.",
+        "Development of a time management program for employees, including integration with access control and video surveillance systems for attendance and activity monitoring.",
+        "Design of data transport systems and computer networks, including implementation of network security and monitoring solutions.",
+        "Collaboration with subcontractors and suppliers for IT infrastructure solutions, including managing relationships with equipment and IT service providers.",
+        "Sourcing necessary equipment and tools on the local market, including price and delivery negotiations.",
+        "Preparation of procurement plans for equipment and tools needed for efficient service operation, including budget and financial resource management.",
+        "Reviewing offers and participating as a specialist in public procurement committees, including evaluation of technical and commercial offers from suppliers.",
+        "Management of construction and installation works for IT infrastructure, including coordination of worker and subcontractor teams to ensure quality.",
+        "Inspection upon receipt of construction and installation works for IT infrastructure, ensuring compliance with technical specifications and quality standards, as well as managing any non-conformities and additional work volumes."
+      ]
+    },
+    {
+      "name": "IMSP SCR Timofei Moșneaga",
+      "position": "Computer Network Technician",
+      "location": "Chișinău",
+      "startDate": "2021-01",
+      "endDate": "2025-05",
+      "highlights": [
+        "IT infrastructure, server, network, and internal application administration.",
+        "Development of custom IT solutions.",
+        "Implementation of access control, video surveillance, and IP telephony systems.",
+        "Technical support for computers, servers, cloud/containerization solutions.",
+        "Effective collaboration with development teams for IT system integration.",
+        "Automation of administrative and operational tasks using scripts (PowerShell, VBA, Bash, CMD, etc.) for OS installation, service management, and rapid resolution of recurring incidents.",
+        "Delivered 2 IP telephony (VoIP) projects based on Grandstream, including full deployment of SIP stations and design of call-routing plans, from installation through configuration."
+      ]
+    },
+    {
+      "name": "IMSP SCR Timofei Moșneaga",
+      "position": "Electrical Technician",
+      "location": "Chișinău",
+      "startDate": "2016-01",
+      "endDate": "2020-05",
+      "highlights": [
+        "Installation, maintenance, and repair of low-voltage electrical installations.",
+        "Modernization of electrical infrastructure."
+      ]
+    },
+    {
+      "name": "SRL \"VAE\"",
+      "position": "System Administrator Course Instructor",
+      "location": "Chișinău",
+      "startDate": "2018-09",
+      "endDate": "2019-05",
+      "highlights": [
+        "Teaching system administration (Linux, Windows, FreeBSD), networking, cloud, VM, video surveillance, Git."
+      ]
+    },
+    {
+      "name": "Neomatrix SRL",
+      "position": "Computer Network Technician",
+      "location": "Chișinău",
+      "startDate": "2013-10",
+      "endDate": "2016-01",
+      "highlights": [
+        "Administration of computers, servers, video surveillance, VOIP, networking.",
+        "Built a VoIP telephony system from scratch through to full production use, including automated system-health monitoring with email status alerts.",
+        "Full system administrator role covering end-to-end IT operations: OS administration across the FreeBSD-to-Ubuntu range, servers, and networking infrastructure.",
+        "Delivered client-side projects end-to-end across VoIP, Wi-Fi, networking, and electrical systems, from planning through implementation.",
+        "Implemented and administered Hyper-V and Citrix virtualization platforms, and 1C business software."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "scada-shop.ro – E-commerce Website Implementation",
+      "description": "End-to-end implementation of the new online shop, built on the MerchantPro e-commerce platform, as the single programmer, using AI-assisted development tools (Claude, GPT, Gemini, GitHub Copilot).",
+      "url": "https://scada-shop.ro",
+      "roles": [
+        "Solo developer (design, code, optimization, deployment)"
+      ],
+      "startDate": "2026-04",
+      "highlights": [
+        "Analysis & preparation: Audit of the existing site, full backups, reverse-engineering of the current code and data before any change.",
+        "New design: New modern, responsive UI/UX design for desktop and mobile.",
+        "Development: Implementation and refactoring of working, maintainable code for the shop features (MerchantPro theme: Twig templates, SCSS, JavaScript).",
+        "Full optimization: Performance, page speed, SEO, security and accessibility optimization of the whole site.",
+        "Pipeline: Git-based development pipeline: version control, testing and automated deployment to production.",
+        "Production launch: Built and tested on the staging site new.scada-shop.ro, then launched to production at scada-shop.ro.",
+        "Ongoing: Continuous improvements, monitoring and maintenance."
+      ],
+      "keywords": [
+        "MerchantPro",
+        "Claude",
+        "GPT",
+        "Gemini",
+        "GitHub Copilot",
+        "Git",
+        "GitHub",
+        "CI/CD",
+        "Twig",
+        "HTML5",
+        "SCSS",
+        "CSS3",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Kanban Team – multi-user task board (pet project)",
+      "description": "A self-hosted Kanban board for teams, grown from my personal to-do app. One code base runs both the single-user and the team version.",
+      "roles": [
+        "Solo developer (idea, architecture, code, tests, deployment)"
+      ],
+      "startDate": "2026-10",
+      "highlights": [
+        "Capabilities: Teams with own columns, task transfer and delegation, notifications, history and audit log, attachments, checklists, labels, timer and statistics; sign-in with passwords and passkeys; live sync between all interfaces (web app, AI assistants via MCP, Telegram bots, Super Productivity plugin); installable app with offline mode; EN/RO/RU interface, light/dark theme.",
+        "Pdf endpoint: PDF attachments with in-app preview (pdf.js) and electronic signing: through MSign (Moldova's government e-signature service, SOAP 1.1 API with the return callback), the MSign portal, or the user's own .p12/.pfx certificate in the browser; every signed copy is checked for a valid signature and saved as a new attachment next to the original.",
+        "Quality: Automated tests (unit, API permission matrix, GUI, browser, reverse proxy, production smoke test) on every push, daily backups, user/admin/API guides with screenshots in three languages.",
+        "Opportunities: Ready to deploy on a client server, behind any reverse proxy or as a Windows portable app; planned storage in Git / S3 with encryption at rest; can be offered as a self-hosted task manager for small companies."
+      ],
+      "keywords": [
+        "JavaScript (vanilla, modular)",
+        "HTML5",
+        "CSS3",
+        "nginx + njs (backend API)",
+        "nchan (real-time updates)",
+        "WebDAV/JSON storage",
+        "Node.js (Windows portable version)",
+        "PWA / Service Worker",
+        "REST API (OpenAPI 3)",
+        "MCP (Model Context Protocol)",
+        "Telegram Bot API",
+        "pdf.js",
+        "MSign (SOAP 1.1)",
+        "Playwright",
+        "GitHub Actions CI/CD",
+        "Bash",
+        "systemd"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "CMTC Chișinău",
+      "area": "Computer Technician",
+      "studyType": "Vocational",
+      "endDate": "2013"
+    },
+    {
+      "institution": "Vocational School No. 9 Chișinău",
+      "area": "Electromonter",
+      "studyType": "Vocational",
+      "endDate": "2011"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "MTCNA",
+      "issuer": "MikroTik",
+      "date": "2013"
+    }
+  ],
+  "skills": [
+    {
+      "name": "DevOps infrastructure administration and automation",
+      "keywords": [
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "GitLab CI/CD",
+        "AWS",
+        "Azure"
+      ]
+    },
+    {
+      "name": "Python programming for web, desktop applications",
+      "keywords": [
+        "Tkinter)",
+        "automation",
+        "and API integration (FastAPI",
+        "REST API",
+        "JSON"
+      ]
+    },
+    {
+      "name": "Process automation application development",
+      "keywords": [
+        "Python",
+        "Django",
+        "Flask",
+        "FastAPI"
+      ]
+    },
+    {
+      "name": "Practical use of large language models",
+      "keywords": [
+        "LLMs) for development and automation workflows (Claude",
+        "Gemini",
+        "GPT",
+        "Ollama",
+        "DeepSeek"
+      ]
+    },
+    {
+      "name": "Model Context Protocol (MCP) server integration and multi-agent orchestration for LLM tool aggregation"
+    },
+    {
+      "name": "Operating system administration",
+      "keywords": [
+        "Windows",
+        "Linux",
+        "Unix/BSD",
+        "MikroTik RouterOS"
+      ]
+    },
+    {
+      "name": "Relational database management",
+      "keywords": [
+        "MySQL",
+        "MSSQL",
+        "PostgreSQL",
+        "Oracle XE"
+      ]
+    },
+    {
+      "name": "Web server administration",
+      "keywords": [
+        "Apache, Nginx)",
+        "VPN configuration",
+        "SSL/SSH security",
+        "monitoring (Nagios",
+        "Zabbix"
+      ]
+    },
+    {
+      "name": "IT services implementation and administration",
+      "keywords": [
+        "Active Directory",
+        "DNS",
+        "DHCP",
+        "VPN",
+        "VoIP"
+      ]
+    },
+    {
+      "name": "Virtualization platform administration",
+      "keywords": [
+        "VMware",
+        "Proxmox",
+        "VirtualBox",
+        "Hyper-V",
+        "Citrix"
+      ]
+    },
+    {
+      "name": "Implementation and administration of business software platforms",
+      "keywords": [
+        "1C"
+      ]
+    },
+    {
+      "name": "Implementation of virtualization and containerization solutions",
+      "keywords": [
+        "Proxmox",
+        "VMware",
+        "Docker",
+        "Proxmox CT",
+        "LXC"
+      ]
+    },
+    {
+      "name": "Server and database migration between Windows and Linux platforms"
+    },
+    {
+      "name": "Network administration",
+      "keywords": [
+        "TCP/IP",
+        "DNS",
+        "DHCP",
+        "VLAN",
+        "VPN",
+        "VoIP",
+        "Zero Trust",
+        "MikroTik",
+        "Cisco",
+        "Ubiquiti",
+        "OpenWRT"
+      ]
+    },
+    {
+      "name": "Computer and virtual network management",
+      "keywords": [
+        "VLAN",
+        "VPN",
+        "Zero Trust",
+        "MikroTik RouterOS",
+        "Cisco",
+        "Ubiquiti",
+        "OpenWRT"
+      ]
+    },
+    {
+      "name": "IP telephony service management and VoIP project delivery, from server deployment to SIP endpoint and trunk configuration",
+      "keywords": [
+        "Asterisk",
+        "FreePBX",
+        "3CX",
+        "Grandstream",
+        "Cisco-CUCM",
+        "Planet"
+      ]
+    },
+    {
+      "name": "Installation and configuration of access control and video surveillance systems",
+      "keywords": [
+        "Hikvision",
+        "Dahua",
+        "ZKAccess",
+        "Milestone"
+      ]
+    },
+    {
+      "name": "IT inventory management with remote monitoring systems",
+      "keywords": [
+        "GLPI",
+        "GLPI-Agent",
+        "FusionInventory"
+      ]
+    },
+    {
+      "name": "Technical support for hardware, software, networking, servers, and cloud/containerization solutions"
+    },
+    {
+      "name": "Organizational development and internal process optimization"
+    },
+    {
+      "name": "Implementation and standardization of operational processes"
+    },
+    {
+      "name": "Coordination and management of technical projects"
+    },
+    {
+      "name": "Effective collaboration in multidisciplinary teams"
+    },
+    {
+      "name": "Installation and maintenance of low-voltage electrical systems"
+    },
+    {
+      "name": "Use of modern virtual assistant and task automation technologies",
+      "keywords": [
+        "RPA",
+        "Artificial Intelligence",
+        "Machine Learning"
+      ]
+    },
+    {
+      "name": "3D design and printing, from MakerWorld sourcing to custom client designs (SketchUp; Bambu Lab P1S; PLA, ABS, PETG, TPU) for tools, organizers, spacers/dividers, and gap fillers"
+    },
+    {
+      "name": "Operating Systems",
+      "level": "Tools",
+      "keywords": [
+        "Windows",
+        "Linux (Ubuntu, Debian, CentOS)",
+        "Unix/BSD"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "Tools",
+      "keywords": [
+        "MySQL",
+        "MSSQL",
+        "PostgreSQL",
+        "Oracle XE"
+      ]
+    },
+    {
+      "name": "Web Servers",
+      "level": "Tools",
+      "keywords": [
+        "Apache",
+        "Nginx"
+      ]
+    },
+    {
+      "name": "Virtualization",
+      "level": "Tools",
+      "keywords": [
+        "VMware",
+        "Proxmox",
+        "VirtualBox"
+      ]
+    },
+    {
+      "name": "Containerization",
+      "level": "Tools",
+      "keywords": [
+        "Docker",
+        "Kubernetes",
+        "LXC",
+        "Proxmox CT"
+      ]
+    },
+    {
+      "name": "Office",
+      "level": "Tools",
+      "keywords": [
+        "Microsoft Office",
+        "LibreOffice"
+      ]
+    },
+    {
+      "name": "Collaboration",
+      "level": "Tools",
+      "keywords": [
+        "Git",
+        "GitLab",
+        "GitHub",
+        "Jira",
+        "Confluence"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "level": "Tools",
+      "keywords": [
+        "Nagios",
+        "Zabbix"
+      ]
+    },
+    {
+      "name": "Code Editors",
+      "level": "Tools",
+      "keywords": [
+        "Visual Studio Code",
+        "PyCharm",
+        "Notepad++",
+        "nano",
+        "vim",
+        "emacs"
+      ]
+    },
+    {
+      "name": "Security",
+      "level": "Tools",
+      "keywords": [
+        "SSL",
+        "SSH",
+        "VPN"
+      ]
+    },
+    {
+      "name": "Workflow Automation",
+      "level": "Tools",
+      "keywords": [
+        "PowerShell",
+        "Bash",
+        "Python"
+      ]
+    },
+    {
+      "name": "Video Conferencing",
+      "level": "Tools",
+      "keywords": [
+        "Zoom",
+        "Microsoft Teams",
+        "Google Meet"
+      ]
+    },
+    {
+      "name": "3D Design & Printing",
+      "level": "Tools",
+      "keywords": [
+        "SketchUp",
+        "Bambu Lab P1S (PLA, ABS, PETG, TPU)",
+        "MakerWorld"
+      ]
+    },
+    {
+      "name": "Technical Support",
+      "level": "Tools",
+      "keywords": [
+        "GLPI",
+        "FusionInventory",
+        "GLPI-Agent",
+        "AnyDesk",
+        "TeamViewer",
+        "RustDesk",
+        "Guacamole",
+        "VNC",
+        "MS Remote Desktop",
+        "SSH-Terminal"
+      ]
+    },
+    {
+      "name": "Access Control and Video Surveillance Systems",
+      "level": "Tools",
+      "keywords": [
+        "Hikvision",
+        "Dahua",
+        "ZKAccess",
+        "Milestone",
+        "Trassir",
+        "Sigur",
+        "ZkTeco"
+      ]
+    },
+    {
+      "name": "IP Telephony",
+      "level": "Tools",
+      "keywords": [
+        "Asterisk",
+        "FreePBX",
+        "3CX",
+        "Grandstream",
+        "Cisco-CUCM"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Romanian",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "IT, Tech"
+    },
+    {
+      "name": "Microservices, Cloud, DevOps"
+    },
+    {
+      "name": "Automation, API Integration"
+    },
+    {
+      "name": "IT Security, Networking"
+    },
+    {
+      "name": "3D Design & Printing"
+    }
+  ],
+  "meta": {
+    "canonical": "https://codi92.github.io/cv/resume.json",
+    "version": "1.0",
+    "lastModified": "2026-11-27"
+  }
+}
