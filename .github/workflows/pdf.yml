@@ -1,10 +1,11 @@
 name: pdf
 
-# Rebuilds cv.pdf / cv.ro.pdf / cv.ru.pdf from the page's print CSS whenever the CV changes, and commits them.
+# Rebuilds resume.json (JSON Resume, from cv.json) and cv.pdf / cv.ro.pdf / cv.ru.pdf (the page's print CSS, tagged,
+# with metadata and resume.json attached) whenever the CV changes, checks what a parser reads, and commits them.
 on:
   push:
     branches: [main]
-    paths: ['index.html', 'style.css', 'js.js', 'profile.png', 'tools/make-pdf.js', '.github/workflows/pdf.yml']
+    paths: ['index.html', 'style.css', 'js.js', 'cv.json', 'profile.png', 'tools/**', '.github/workflows/pdf.yml']
   workflow_dispatch:
 
 permissions:
@@ -24,26 +25,41 @@ jobs:
           node-version: 20
       - name: Install Playwright + Chromium
         run: |
-          npm install --no-save --no-package-lock playwright@1.48.2
+          npm install --no-save --no-package-lock playwright@1.48.2 pdf-lib@1.17.1
           npx playwright install --with-deps chromium
           sudo apt-get install -y fonts-liberation
-      - name: Build the PDFs
-        run: node tools/make-pdf.js
-      - name: Page previews (PNG, for review)
+      - name: Build resume.json and the PDFs
+        run: |
+          node tools/make-resume-json.js
+          node tools/make-pdf.js
+      - name: What a parser reads (text layer, tags, metadata, attachment)
         run: |
           sudo apt-get install -y poppler-utils
           mkdir -p preview
+          for f in cv cv.ro cv.ru; do
+            pdftotext -enc UTF-8 "$f.pdf" "preview/$f.txt"
+            pdfinfo -struct "$f.pdf" > "preview/$f.struct.txt"
+            pdfinfo "$f.pdf" | tee "preview/$f.info.txt"
+            pdfdetach -list "$f.pdf"
+            grep -q "Tagged: *yes" "preview/$f.info.txt" || { echo "$f: not tagged"; exit 1; }
+            pdfdetach -list "$f.pdf" | grep -q resume.json || { echo "$f: resume.json not attached"; exit 1; }
+            head -c 300 "preview/$f.txt"; echo
+          done
+          grep -q "^Pavel Slajnev" preview/cv.txt || { echo "cv.pdf: the text does not start with the name"; exit 1; }
+      - name: Page previews (PNG, for review)
+        run: |
           for f in cv cv.ro cv.ru; do pdftoppm -png -r 50 "$f.pdf" "preview/$f"; done
       - uses: actions/upload-artifact@v4
         with:
           name: cv-pdf
           path: |
             *.pdf
-            preview/*.png
+            resume.json
+            preview/*
       - name: Commit the PDFs
         run: |
-          git add cv.pdf cv.ro.pdf cv.ru.pdf
+          git add cv.pdf cv.ro.pdf cv.ru.pdf resume.json
           if git diff --cached --quiet; then echo "PDFs unchanged"; exit 0; fi
           git -c user.name="github-actions[bot]" -c user.email="41898699+github-actions[bot]@users.noreply.github.com" \
-            commit -m "Rebuild CV PDFs [skip ci]"
+            commit -m "Rebuild CV PDFs and resume.json [skip ci]"
           git push

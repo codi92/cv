@@ -296,6 +296,13 @@
             display: none;
         }
 
+        .headline {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #00796b;
+            margin: -8px 0 16px;
+        }
+
         .project {
             margin-top: 24px;
         }
@@ -453,6 +460,28 @@
         }
 
         @media print {
+            .h1-lang {
+                display: none !important;
+            }
+
+            /* long sections may break across pages; a job's title, company and date stay with its first lines */
+            .section:not(.two-col) {
+                break-inside: auto !important;
+                page-break-inside: auto !important;
+            }
+
+            h2,
+            .job-title,
+            .job-place,
+            .job-date {
+                break-after: avoid !important;
+                page-break-after: avoid !important;
+            }
+
+            li {
+                break-inside: avoid;
+            }
+
             body {
                 background: #fff !important;
                 color: #181818 !important;
