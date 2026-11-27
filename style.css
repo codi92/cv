@@ -464,8 +464,11 @@
                 display: none !important;
             }
 
-            /* long sections may break across pages; a job's title, company and date stay with its first lines */
-            .section:not(.two-col) {
+            /* long sections may break across pages (two-column blocks too: in print they are one column);
+               a heading and a job's title, company and date stay with their first lines */
+            .section:not(.two-col),
+            .two-col:not(.section),
+            .section.two-col {
                 break-inside: auto !important;
                 page-break-inside: auto !important;
             }
